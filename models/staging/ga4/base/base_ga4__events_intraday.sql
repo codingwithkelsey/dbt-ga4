@@ -70,7 +70,7 @@ renamed as (
         device.web_info.browser_version as device_browser_version,
         device.web_info.browser as device_web_info_browser,
         device.web_info.browser_version as device_web_info_browser_version,
-        device.web_info.hostname as device_web_info_hostname,
+        device.web_info.browser as device_web_info_hostname,
         geo.continent as geo_continent,
         geo.country as geo_country,
         geo.region as geo_region,
