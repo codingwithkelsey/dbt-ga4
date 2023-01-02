@@ -15,10 +15,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 # The following variables should be set in the project that loads this package. 
 vars:
+    ga4:
       project: "bigquery-public-data"
       dataset: "ga4_obfuscated_sample_ecommerce"
       start_date: "20210120" # Defines the earliest GA4 event _TABLE_SUFFIX to load into base events model.
-    frequency: daily # daily|streaming defaults to daily. If you only use the streaming export, use this setting to only get the streaming data.
+      frequency: daily # daily|streaming defaults to daily. If you only use the streaming export, use this setting to only get the streaming data.
 
 # Query parameter exclusions
 # You can remove specific query parameters from the page_location by listing them here
